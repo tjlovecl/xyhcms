@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*创狮整合营销*/
+.service{ background:url(../images/service/service_05.png) no-repeat center center;}
+.service_con{  /*width:100%;*/ transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;}
+.servicecon{ width:24%; float:left;}
+.servicecon1{ width:24%; float:right; padding-left: 2%;}
+.servicemt{ margin-top:50px;}
+.service_con h3,.service_con1 h3{ text-align:center; font-size:65px; margin:20px auto;}
+.service_con h4,.service_con1 h4{ margin:25px auto; text-indent:8px;}
+.service_con ul,.service_con1 ul{ float:left;}
+.service_con ul li,.service_con1 ul li{ list-style-type:none;display:inline-block; padding:0px 8px; }
+.service_con ul li a,.service_con1 ul li a{ color:#999 !important;display:inline-block; padding: 1px 16px 0 0;  margin-bottom:10px; font-size:14px;}
+.service_con ul li a:hover{ color:#d70f23 !important;}
+/*创狮的特色*/
+.item{ background:url(../images/service/service_02.png) no-repeat center top; margin-top:50px; padding-bottom:4%;}
+.item .row{ padding-top:5%;}
+.item_con{ max-width:58%; text-align:center;}
+.mr10b{ margin-right:10%;}
+.ml10b{ margin-left:7%;}
+.item_con h4{ padding-bottom:20px; padding-top:10px; font-size:24px;}
+.item_con h4 i{ font-size:65px; margin-right:18x;}
+
+/*创狮强调沟通*/
+.ser_communicate .row{ background:url(../images/service/service_06.png) no-repeat center top; background-size:67%; margin-top:30px;}
+.communicate{ background:#f5f5f5; width:72%; height:290px; margin: 54% auto 50px; box-shadow:0 0px 18px rgba(0, 0, 0, 0.18); }
+.communicate h3{ font-size:18px; height:46px; line-height:46px; color:#fff; text-align:center;}
+.communicate p { padding:25px 8%; font-size:14px; color:#888;line-height: 24px;}
+.communicate p font{ display:block; text-align:center; padding-bottom:15px;}
+.communicate p font i{ font-size:40px;}
+.bg_redl{ background:#eb4757;}
+.bg_org{ background:#ef8d48;}
+.bg_violet{ background:#d541a1;}
+.text-color-red{ color:#eb4757;}
+.text-color-org{color:#ef8d48;}
+.text-color-violet{color:#d541a1;}
+.team_con{ display:table; line-height:26px; margin:42px auto auto; width:70%;}
+.team_con .fs20{  vertical-align:middle; padding :0 0 0 20px;}
+.team_n{ width:54px; height:54px; line-height:54px; text-align:center; font-size:26px; background:#ee4b47;}
+
+
+/*大于768px尺寸*/
+@media (min-width: 768px){	
+
+}
+
+/*大于等于1200px*/
+@media (min-width: 1200px){	
+
+
+}
+
+/*大于等于768px尺寸 小于1190px尺寸 	*/
+@media (min-width: 768px) and (max-width: 1199px){
+.service{ background:url(../images/service/service_05.png) no-repeat center center; background-size:48%}
+}
+
+/*大于等于992px尺寸 小于1200px尺寸 	*/
+@media (min-width: 992px) and (max-width: 1119px){	
+
+}
+
+/*大于等于768px尺寸 小于992px尺寸 	*/
+@media (min-width: 768px) and (max-width: 991px){
+.service{ background:none;}
+.servicecon{ width:50%; float:left;}
+.servicecon1{ width:50%; float:right;}
+.item_con{ max-width:100%;}
+/*创狮强调沟通*/
+.ser_communicate .row { background:none;margin-top:0;}
+.communicate { margin: 0 auto;}
+}
+/*小于767px尺寸*/
+@media (max-width: 767px){
+	.service{ background:none;}
+	.servicemt{ margin-top:20px;}
+	.servicecon{ width:100%; float:left; border-bottom:1px dotted #ddd;}
+.servicecon1{ width:100%; float:right; border-bottom:1px dotted #ddd; padding-left:0;}
+	.lc_bg{ display:none;}
+	.communicate{ width:100%;}
+	.ser_communicate { background:none;}
+	/*创狮特色*/
+	.item_con{ max-width:100%;}
+	.item .row { padding-top: 9.6%;}
+	.item_con h4 {  padding-bottom: 6px;}
+	/*创狮强调沟通*/
+	.ser_communicate .row { background:none;margin-top:0;}
+	.communicate { margin: 0 auto;}
+	
+	
+
+
+}

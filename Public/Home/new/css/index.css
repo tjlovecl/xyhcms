@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*banner下面*/
+.banner_down .col-md-4{ padding:20px 0;}
+.inb_but{ padding:18px; display:inline-block; color:#a1a1a1; font-size:13px;transition:All 0.4s ease-in;-webkit-transition:All 0.4s ease-in;-moz-transition:All 0.4s ease-in;-o-transition:All 0.4s ease-in;}
+.inb_but i{ font-size:60px; float:left; margin-right:10px; margin-top:2px;}
+.inb_but h4{ margin-bottom:15px; color:#666;}
+.inb_but h4 font{ border-bottom:2px solid #666; padding-bottom:2px;}
+.inb_but_color h4{ color:#fff;}
+.inb_but_color h4 font{ border-bottom:2px solid #fff;}
+.inb_but:hover{ background:#d70f23; color:#fff !important;box-shadow:0px 4px 9px rgba(249, 34, 62, 0.4);}
+
+/*创狮服务*/
+.in_service_con{ border:1px solid #eee; height:330px;transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;}
+
+.in_service_con:hover{ background:#d70f23;transform:translate(0,-20px);-webkit-transform:translate(0,-20px);-moz-transform:translate(0,-20px);-o-transform:translate(0,-20px);-ms-transform:translate(0,-20px); box-shadow:0 0 35px rgba(1,146,193,.56);-webkit-box-shadow:0px 5px 15px #e5e5e5; -moz-box-shadow:0px 5px 15px #e5e5e5;}
+.in_service_con h3{ width:100%; text-align:center; font-size:65px; margin:20px auto;}
+.in_service_con .b-pic{ display:none;}
+.in_service_con h4{ margin:25px auto; text-indent:8px;}
+.in_service_con ul { width:49.5%; float:left;}
+.in_service_con ul li{ list-style-type:none;display:inline-block; padding:0px 8px; }
+.in_service_con ul li a{ color:#999 ;display:inline-block; padding:4px 8px; border:1px solid #ddd; margin-bottom:10px; font-size:14px;}
+.in_service_con ul li a:hover{ color:#fffa7f !important; border:1px solid #fffa7f;}
+.servicecon2 ul { width:99.5%;}
+.in_sercon h4{ color:#fff !important;}
+.in_sercon ul li a{ color:#fff !important;}
+
+/*为什么要选择创狮*/
+.index-row{ width:100%; text-align:center; background:url(../images/index_bg1.jpg) no-repeat center top; height:980px; margin-top: 80px; padding-top:90px; position:relative;}
+.our-data-item{  height:84px; margin:15px auto;}
+.number-wrapper{ position:relative; margin-top:5px; font-size:46px;}
+.number-wrapper span{ font-size:48px; line-height:56px;}
+.number-wrapper font{ position:absolute; top:0; font-size:16px;}
+.our-data-item .title{ font-size:14px; color:#fff;}
+.choice_white{ background:#fff; border-radius:6px; margin-top:66px;box-shadow:0 0 35px rgba(0,0,0,.09); padding:0 40px 20px 40px;}
+.choice_white .title-tm{ padding-top:46px;}
+.choice_data{ width:90%; margin:0 auto 30px; border:1px solid #eee; padding:28px 0; transition:All 0.4s ease-in-out;-webkit-transition:All 0.4s ease-in-out;-moz-transition:All 0.4s ease-in-out;-o-transition:All 0.4s ease-in-out;}
+.choice_data:hover{background:#d70f23; color:#fff !important;box-shadow:0px 5px 15px rgba(249, 34, 62, 0.5);}
+/*服务优势*/
+.in_advantage{ margin-top: 2.2%;margin-bottom: 2.8%;}
+.inadv_con{ border:1px solid #ddd; height:330px; margin-bottom:10%;}
+.inadv_con:hover{ border:1px solid #d70f23;}
+.inadv_con h2 { margin-top:30%;}
+.inadv_con h2 font{ font-size:54px;}
+.inadv_con p{ border-top:1px dotted #ddd; margin-top:16%; padding-top:8%; color:#888;}
+.inadv_congl{ color:#fff; background:#d70f23;transition:All 0.5s ease-in-out;-webkit-transition:All 0.5s ease-in-out;-moz-transition:All 0.6s ease-in-out;-o-transition:All 0.5s ease-in-out;}
+.inadv_congl:hover{ background:#d70f23;transform:translate(0,-20px);-webkit-transform:translate(0,-20px);-moz-transform:translate(0,-20px);-o-transform:translate(0,-20px);-ms-transform:translate(0,-20px); box-shadow:0 0 35px rgba(247,34,63,.46);-webkit-box-shadow:0px 5px 15px #f7223f; -moz-box-shadow:0px 5px 15px #f7223f;}
+.inadv_congl p{ color:#fff; border-top:1px dotted #fff;}
+
+
+
+
+
+	/*大于等于992px尺寸 小于1200px尺寸 	*/
+@media (min-width: 992px) and (max-width: 1119px){	
+.in_service_con{ height:380px}
+}
+/*小于767px尺寸*/
+@media (max-width: 767px){
+	.in_service_con{ padding-left:0 !important; padding-right:0 !important;}
+.number-wrapper{ font-size:28px;}
+.number-wrapper span{ font-size:30px;}
+.choice_white{ padding:0;}
+.choice_data{ width:100%; padding:15px 0;}
+.index-row{ margin-top:40px; padding-top:60px;}
+.in_advantage{ margin-top:180px;}
+.inadv_con{ height:auto; padding-bottom: 10%;}
+.inadv_con h2 font{ font-size:36px;}
+.in_Partner li{width: 49%;}
+.in_Partner li img{ max-width:100%; display:block;}
+	
+	
+	}

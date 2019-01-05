@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+img{ max-width:100%; display:block; height:auto;}
+/*视频设计专区*/
+.g_tit{ font-size:26px; line-height:68px; text-align:center; padding-top:4.5%; padding-bottom:4%;}
+.video_f1 h4{ font-size:18px; color:#333; background:url(../images/video/video_03.png) no-repeat center left;text-indent: 20px;}
+.video_f1 p{ color: #999;}
+.bg-f4{ background:#f4f4f4; padding-bottom:3.5%;}
+.video_f2{ padding:2% 0;}
+.video_f2 .mt{ margin-top:5%;}
+.video_f2 h3{ padding-top:3%; font-size:26px; border-bottom:1px dashed #ddd; padding-bottom:18px; margin-bottom:5px;}
+.video_f2 p{ color:#999; padding-right:9%; padding-top:2%;}
+
+.about_t{ text-align:center;padding: 10px 8%;}
+.about_t h4{ width:142px; height:142px; line-height:142px; text-align:center; font-size:48px; color:#fff; border-radius:50%; display:inline-block;}
+.about_t p{ text-align:left; font-size:13px; line-height:22px; color:#333; margin-top:10px;}
+.about_bottom{ border-top:1px dotted #ddd; padding-top:20px;}
+.bg1{ background:#1bc5bb;}
+.bg2{ background:#ee4b47;}
+.bg3{ background:#fcae14;}
+.bg4{ background:#00e8f6;}
+.bg5{ background:#83cc2b;}
+
+/*技术开发专区*/
+.tit_border{ position:relative; font-size:36px !important; line-height: 35px;}
+.tit_border:after{ display: block; content: ""; width: 65px;height: 4px;background: #d70f23; margin: 26px auto 0;}
+.skill_f1{ margin-bottom:5%;}
+.skill_f1 h4{}
+.skill_f1 p{ color:#888 !important; line-height:28px; text-indent:30px;}
+.skill_f1 img{ box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);}
+
+.skill_f2_bg{ background:#00557c url(../images/skill/skill_07.png) no-repeat center top; padding-bottom:8%;}
+.skill_f2_bg .g_tit{ margin-top:8%}
+.skill_f2{ background:rgba(255,255,255,0.3); width:88%; height:455px; border-radius:8px; margin: 30% auto 0; box-shadow:0 0px 18px rgba(0, 0, 0, 0.18); position:relative; }
+.skill_f2_bg .tit_border:after{background: #fff !important;}
+.skill_f2 h3{ font-size:30px; color:#1c84b6; background:url(../images/skill/skill_03.png) no-repeat center; width:162px; height:161px; line-height:161px; border-radius:50%; position:absolute; left:50%; margin-left:-76px; top:-78px;text-align:center;}
+.skill_f2 p { padding:40% 8% 0; font-size:15px; color:#fff;line-height: 28px;}
+.skill_f2 p font{ display:block; text-align:center; padding-bottom:15px;}
+.skill_f2 p font i{ font-size:40px;}
+.skill_f2 .row{ margin:auto;}
+.skill_con{ display:table; line-height:26px; margin:22px auto; border-bottom:1px dashed #999; width:70%;}
+.skill_con:nth-child(3){ border-bottom:0;}
+.skill_con .fs20{  vertical-align:middle; padding :0 0 0 20px;}
+.skill_n{ width:54px; height:54px; line-height:54px; text-align:center; font-size:26px; background:#ee4b47;color:#fff;}
+.about_bg-green{ background:#83cc2b !important;}
+.about_bg-qs{ background:#1bc5bb !important;}
+.about_bg-cs{ background:#fcae14 !important;}
+.about_bg-hs{ background:#ee4b47 !important;}
+.skill_f4{ background:#535657 url(../images/skill/skill_09.png) no-repeat center top; padding:5% 0;}
+.skill_f4 .tit_border:after{background: #fff !important;}
+.skill_f4 .col-md-2{ width:20% !important;}
+.skill_t{ text-align:center;padding: 10px 15%;}
+.skill_t h4{ background:rgba(0,0,0,0.5); width:110px; height:110px; line-height:110px; text-align:center; font-size:36px; color:#fff; border-radius:50%; display:inline-block;}
+.skill_t p{ text-align:left; font-size:14px; line-height:28px; color:#fff; margin-top:10px;}
+.skill_t h5{ font-size:20px; color:#fff;}
+
+@media (min-width: 992px){
+.col-md-2 { width:20%;
+}
+}
+/*小于767px尺寸*/
+@media (max-width: 767px){
+	.skill_t{ text-align:center;padding: 10px 5%;}
+	.skill_f2 p{ font-size:14px;}
+	.tit_border{ font-size:24px !important;}
+	
+}

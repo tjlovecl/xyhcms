@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*创狮案例*/
+.bg-blue{ background:#007e9d;}
+.bg-red{ background:#cc000c;}
+.bg-orgin{ background:#f88915;}
+.casemt{ margin-top:50px;}
+.case img{ max-width:100%; display:block; height:auto;}
+.case_text{padding: 5% 4% 0; color:#fff;}
+.case_text h3{ padding-bottom:8%; font-size:26px;}
+.case_text p{ margin-bottom:8%; line-height:24px;}
+.case_text a{ font-size:15px; border:1px solid rgba(255,255,255,0.5); color:rgba(255,255,255,0.6); padding:5px 10px;}
+
+.case_con_title{ border-bottom:1px solid #e6e6e6; background:rgba(255,255,255,1); }
+
+.case_con_title ul{ padding:10px 0; margin-bottom:0;}
+.case_con_title ul li{ line-height:30px; margin:6px auto; border-right:1px solid #efefef; padding:0 20px; font-size:16px; color:#888;}
+.case_active{ background:#d70f23; color:#fff !important; border-radius:3px;}
+.case_active a{ color:#fff;}
+.case_main{ color:#707070; font-size:16px; margin-top:6%;}
+.case_main h3{ color:#5b5b5b; text-align:center; margin-bottom:5%; line-height:28px;}
+.case_main img{ max-width:100%; display:block; height:auto;}
+
+
+/*关于创狮*/
+.about_bg-green{ background:#83cc2b !important;}
+.about_bg-qs{ background:#1bc5bb !important;}
+.about_bg-cs{ background:#fcae14 !important;}
+.about_bg-hs{ background:#ee4b47 !important;}
+.in_about { padding:5.5% 0; line-height:28px;}
+.in_about font{ font-size:40px; color:#d70f23; }
+.about_tit{ line-height:48px; margin:20px auto;}
+.about_tit strong{ display:inline-block; width:10px; height:10px; border-radius:50%; background:#e14b5a; margin-right:10px;}
+.about_t{ text-align:center;padding: 10px 8%;}
+.about_t h4{ width:142px; height:142px; line-height:142px; text-align:center; color:#eeeeee; border-radius:50%; display:inline-block;}
+.about_t p{ text-align:left; font-size:13px; line-height:22px; color:#888888; margin-top:10px;}
+.about_bottom{ border-top:1px dotted #ddd; padding-top:20px;}
+
+.in_service{ background:url(../images/about/about_02.jpg) no-repeat center; text-align:center; color:#fff; height:605px;}
+.serv_title{ font-size:40px; padding-top:135px; letter-spacing:1px;}
+.serv_title h5{ margin-top:45px;}
+.serv_con_t h3{ font-size:25px; margin-top:70px;}
+.serv_con_t p{ font-size:14px; line-height:28px; width:50%; margin:25px auto 0;}
+
+.in_team{ background:url(../images/about/about_03.jpg) no-repeat center; color:#fff; height:780px;}
+.team_title{ font-size:40px; text-align:center; padding-top:130px; letter-spacing:1px;}
+.team_title h4{ font-size:20px; padding-top:34px; line-height:28px;}
+.team_con{ display:table; line-height:26px; margin:42px auto auto; width:70%;}
+.team_con .fs20{  vertical-align:middle; padding :0 0 0 20px;}
+.team_n{ width:54px; height:54px; line-height:54px; text-align:center; font-size:26px; background:#ee4b47;}
+
+.in_team .row{ margin:auto; padding-top:60px;}
+.honor_title{ font-size:40px; text-align:center; color:#333333; padding-top:120px;}
+.honor_title h4{ color:#888; font-size:17px; padding:30px 0;}
+.honor_con{ width:60%; margin:0 auto; text-align:center; color:#666; padding-bottom:80px;}
+.honor_pic{ border:#eee 1px solid; margin-bottom:10px;}
+.honor_tit{ padding-bottom:20px;}
+
+
+.in_join{ background:#f1f5f7; padding-bottom:80px;}
+.join_title{ font-size:40px; text-align:center; color:#333333; padding-top:90px;}
+.join_title h4{ color:#888; font-size:17px; padding:20px 0; line-height:28px; text-align:left}
+.join_con{ }
+.join_con .comTab{font-size:16px;float:left; display:inline-block;line-height:42px; text-align:center; position:relative;}
+.join_con .tabHov{ color:#333;}
+.join_con .comTab em{display:inline-block;height:100%; background:#eee; border-radius:3px; font-style:normal; padding:0 20px; margin-right:25px; }
+.join_con .tabHov em{ background: #d70f23; padding:0 20px; color:#fff; }
+.profit_flow{ padding-top:10px;}
+.profit_flow h3{ color:#a40002;}
+.profit_flow ul { border-bottom:1px dashed #ddd; margin-left:0;}
+.profit_flow ul li{ margin-right:5%; padding:10px 0; font-weight:bold;}
+.profit_flow ul li span{ color:#666; font-weight:normal;}
+.profit_flow h5{ font-weight:bold; padding-top:10px;}
+.profit_flow ol{ line-height:28px;}
+
+
+/*创狮观点*/
+.viewpoint_mian{ padding-top:5%;}
+.view_year{ margin:3.5% auto; color:#bbc5cd;}
+.view_year span{ margin-right:10px;}
+.view_year span:nth-child(1) i{ font-size:16px;}
+.view_year span:nth-child(2) i{ font-size:18px;}
+.viewpoint_con{ line-height:28px; font-size:14px; color:#6a6a6a; min-height:300px; padding-top:20px; border-bottom:1px dashed #ccc;}
+.viewpoint_con img{ max-width:100%; display:block; height:auto;}
+.viewpoint_mian .bdsharebuttonbox{ padding-top:16px;}
+.viewpoint_mian .bdsharebuttonbox a{ margin-right:15px;}
+
+.xyp{padding-top: 10px; line-height:28px;}
+
+
+.viewpoint .media{ padding:3% 0 ;}
+.viewpoint .media a{ width:361px; height:201px; overflow:hidden;}
+.viewpoint .media a img{ max-width:100%; display:block;}
+.viewpoint .media .media-body{ line-height:26px; padding-left:3%;}
+.viewpoint .media .media-body h4{ font-size:25px; color:#333; padding-bottom:5%; padding-top:1%;}
+.viewpoint .pager{ margin: 20px 0 50px;}
+.viewpoint .pager .active a{ color:#fff; background:#d70f23; border: 1px solid #d70f23;}
+.viewpoint .pager li > a, .pager li > span{ padding: 6px 14px; border-radius:5px; font-size:16px;}
+
+
+/*大于768px尺寸*/
+@media (min-width: 768px){	    
+
+}
+
+/*大于等于1200px*/
+@media (min-width: 1200px){	
+
+
+}
+
+/*大于等于768px尺寸 小于1190px尺寸 	*/
+@media (min-width: 768px) and (max-width: 1199px){
+
+}
+
+/*大于等于992px尺寸 小于1200px尺寸 	*/
+@media (min-width: 992px) and (max-width: 1119px){	
+.case_text{padding: 1.8% 4% 2%; }
+}
+
+/*大于等于768px尺寸 小于992px尺寸 	*/
+@media (min-width: 768px) and (max-width: 991px){
+.case_text{padding: 1% 4% 1.5%; }
+.case_text h3 { padding-bottom: 0;}
+.viewpoint .media .media-body h4{ font-size:22px;}
+}
+/*小于767px尺寸*/
+@media (max-width: 767px){
+	.casemt{ margin-top:0;}
+	.case_text{padding: 3.5% 4% 7%; }
+	.case .case_pic{ display:none !important;}
+	/*关于创狮*/
+	.team_title{ padding-top:80px;}
+	.serv_con_t p{ width:95%;}
+	.team_con{ width:100%;}
+	.in_team .row{  padding-top:25px;}
+	/* 创狮观点*/
+	.case_con_title ul{ text-align:center;}
+	.case_con_title ul li{ font-size:14px; padding: 0 10px;}
+	
+}
