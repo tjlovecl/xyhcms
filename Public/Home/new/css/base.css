@@ -1,0 +1,112 @@
+/*让英文分行显示*/
+*{word-wrap:break-word}
+/*IE下a:hover 背景闪烁*/
+*html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+em,i{font-style:normal;}
+
+/*去除所有标签内的外和内边距*/
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+body{
+	font:14px "Microsoft YaHei","宋体",Arial,sans-serif;
+	background-color:#fff;
+	color:#424242;
+}
+input{
+	font:14px "Microsoft YaHei","宋体",Arial,sans-serif;
+	color:#424242;
+}
+.font_st{font:12px "宋体"}
+
+/*网站的可视宽度*/
+.w1190,.container{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+/*a标签的样式*/
+a{color:#666; text-decoration:none; transition:all 500ms;}
+
+
+/*重置标签的一些样式*/
+a{text-decoration:none;}
+ul,ol,dl{list-style-type:none}
+
+.border{ border:1px solid #eee;}
+
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+/*清除浮动*/
+.clearfix,.container{*zoom:1;} /*解决ie6/7下面的浮动塌陷问题*/
+.clearfix:before,.clearfix:after,.container:before,.container:after {display:table; line-height:0; content:"";} /*display:table;解决其他下面的浮动塌陷问题,line-height是将添加的内容高度设为0；*/
+.clearfix:after,.container:after{clear:both;}/*清楚浮动*/
+
+/*去除图片的边框*/
+img{border:none;}
+
+/*文字*/
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+
+/*定位*/
+.pr{position:relative;}
+.pa{position:absolute;}
+
+.hidden{display:none;}
+
+/*颜色*/
+.text-red{color:red !important;}
+.text-white{ color:#fff !important;}
+.text-color4{ color:#444 !important;}
+.text-color6{ color:#666 !important;}
+.text-color9{ color:#888 !important;}
+.text-color9{ color:#999 !important;}
+
+/*特殊字体大小*/
+.f10{font-size:10px;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f24{font-size:20px;}
+
+/*基本样式*/
+.mp{ margin:0 auto;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr25{margin-right:25px;}
+.mr30{margin-right:30px;}
+.mr35{margin-right:35px;}
+
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left:25px;}
+.ml30{margin-left:30px;}
+
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt14{margin-top:14px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb25{margin-bottom:25px;}
+.mb30{margin-bottom:30px;}
+
+.p8{padding:8px;}
+
+.oneLine{overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+
