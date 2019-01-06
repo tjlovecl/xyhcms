@@ -213,7 +213,16 @@ class Yang extends TagLib {
 		),
 		'click'           => array('close' => 0),
 		'online'          => array('close' => 0),
+        // -- new add by taojin --
+        'departmentlist' => array (
+            'attr' => 'pid',
+            'close' => 1,
+        ),
 
+        'recruitlist' => array (
+            'attr' => 'department_id',
+            'close' => 1,
+        ),
 	);
 
 	//标签名前加下划线
@@ -2328,5 +2337,47 @@ str;
 
 		return $str;
 	}
+
+    // -- new add by taojin --
+	public function _departmentlist($attr, $content) {
+	    $where = "";
+	    if (isset($attr['pid'])) {
+	        $where = "pid=".((int)$attr['pid']);
+        }
+
+        $str = <<<str
+<?php
+        if (!empty(\$where)) {
+            \$departmentlist = M('department')->where(\$where)->order("sorting desc")->select();
+        } else {
+            \$departmentlist = M('department')->order("sorting desc")->select();
+        }
+?>
+str;
+        return $str;
+    }
+
+
+    public function _recruitlist($attr, $content) {
+	    $where = "";
+
+        if (isset($attr['department_id'])) {
+            $where = "department_id=".((int)$attr['department_id']);
+        }
+
+        $str = <<<str
+<?php
+        if (!empty(\$where)) {
+            \$recruitlist = M('recruit')->where(\$where)->select();
+        } else {
+            \$recruitlist = M('recruit')->select();
+        }
+?>
+str;
+        return $str;
+
+
+    }
+
 
 }
