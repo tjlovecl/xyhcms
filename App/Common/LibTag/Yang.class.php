@@ -2338,42 +2338,78 @@ str;
 		return $str;
 	}
 
+    /**
+    foreach(\$_artlist as \$autoindex => \$artlist):
+
+    \$_jumpflag = (\$artlist['flag'] & B_JUMP) == B_JUMP? true : false;
+    \$artlist['url'] = get_content_url(\$artlist['id'], \$artlist['cid'], \$artlist['ename'], \$_jumpflag, \$artlist['jump_url']);
+
+    if($titlelen) \$artlist['title'] = str2sub(\$artlist['title'], $titlelen, 0);
+    if($infolen) \$artlist['description'] = str2sub(\$artlist['description'], $infolen, 0);
+
+    ?>
+    str;
+    $str .= $content;
+    $str .= '<?php endforeach;?>';
+    return $str;
+     */
+
     // -- new add by taojin --
 	public function _departmentlist($attr, $content) {
-	    $where = "";
+	    $_where = "";
 	    if (isset($attr['pid'])) {
-	        $where = "pid=".((int)$attr['pid']);
+	        $_where = "pid=".((int)$attr['pid']);
         }
 
         $str = <<<str
 <?php
+        \$where = "$_where";
         if (!empty(\$where)) {
-            \$departmentlist = M('department')->where(\$where)->order("sorting desc")->select();
+            \$_departmentlist = M('department')->where(\$where)->order("sorting desc")->select();
         } else {
-            \$departmentlist = M('department')->order("sorting desc")->select();
+            \$_departmentlist = M('department')->order("sorting desc")->select();
         }
+        
+        if (empty(\$_departmentlist)) {
+            \$_departmentlist = array();
+        }
+        
+        foreach(\$_departmentlist as \$departmentindex => \$departmentlist):
 ?>
 str;
+        $str .= $content;
+        $str .= '<?php endforeach;?>';
         return $str;
     }
 
 
     public function _recruitlist($attr, $content) {
-	    $where = "";
 
+	    $_department_id = 0;
         if (isset($attr['department_id'])) {
-            $where = "department_id=".((int)$attr['department_id']);
+            $_department_id = $attr['department_id'];
         }
 
         $str = <<<str
 <?php
-        if (!empty(\$where)) {
-            \$recruitlist = M('recruit')->where(\$where)->select();
-        } else {
-            \$recruitlist = M('recruit')->select();
+        if (!empty($_department_id)) {
+            \$where = "department_id=".$_department_id;
         }
+        
+        if (!empty(\$where)) {
+            \$_recruitlist = M('recruit')->where(\$where)->select();
+        } else {
+            \$_recruitlist = M('recruit')->select();
+        }
+        if (empty(\$_recruitlist)) {
+            \$_recruitlist = array();
+        }
+        foreach(\$_recruitlist as \$recruitindex => \$recruitlist):
+            \$recruitlist['details'] = json_decode(\$recruitlist['details'], true);
 ?>
 str;
+        $str .= $content;
+        $str .= '<?php endforeach;?>';
         return $str;
 
 
