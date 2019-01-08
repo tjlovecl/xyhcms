@@ -13,7 +13,7 @@ class StaticController extends HomeCommonController
 {
 
     // 创狮服务总体介绍
-    public function one() {
+    public function about() {
         $this->display();
     }
 

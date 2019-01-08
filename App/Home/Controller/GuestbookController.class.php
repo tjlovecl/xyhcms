@@ -67,4 +67,42 @@ class GuestbookController extends HomeCommonController {
 		}
 	}
 
+
+	public function secondVersionAdd() {
+        if (!IS_POST) {
+            exit();
+        }
+        $content = I('content', '');
+        $data    = I('post.');
+       /* $verify  = I('vcode', '', 'htmlspecialchars,trim');
+        if (C('CFG_VERIFY_GUESTBOOK') == 1 && !check_verify($verify)) {
+            $this->error('验证码不正确');
+        }*/
+
+        if (empty($data['tel']) || !preg_match("/^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\d{8}$/", $data['tel'])) {
+            $this->error('手机号码不正确!');
+        }
+
+        if (empty($data['username'])) {
+            $this->error('姓名不能为空!');
+        }
+        if (empty($data['content'])) {
+            $this->error('留言内容不能为空!');
+        }
+        if (check_badword($content)) {
+            $this->error('留言内容包含非法信息，请认真填写!');
+        }
+
+        $data['post_time'] = date('Y-m-d H:i:s');
+        $data['ip']        = get_client_ip();
+
+        $db = M('guestbook');
+
+        if ($id = $db->add($data)) {
+            $this->success('添加成功', U('Index/index'));
+        } else {
+            $this->error('添加失败');
+        }
+    }
+
 }
