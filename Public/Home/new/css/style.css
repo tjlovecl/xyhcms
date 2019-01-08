@@ -150,6 +150,7 @@ body{ font-family: 'Microsoft YaHei',sans-serif;}
 .in_contact_but{margin-top: 10px; margin-right:12px;}
 .in_con_pop{width: 310px;height: 100%;top: 0; right:0; z-index: 99999999; position:fixed; background:#fff;}
 .inClose{}
+.inClose i{ cursor:pointer;}
 .in_con_pop div.weixin { background: #efefef; padding: 20px 0; cursor: pointer;}
 .in_con_pop div.weixin:hover{ background:#d70f23;}
 .in_con_pop div.weixin .weixin-img {
