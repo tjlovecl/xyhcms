@@ -19,21 +19,89 @@
 <form class="form-horizontal" role="form" action="index.php?s=/Guestbook/secondVersionAdd" method="post">
 				<div class="form-group">
 					<label class="col-sm-2 control-label">姓名</label>
-					<div class="col-sm-10"><input type="text" class="form-control" name="username"/></div>
+					<div class="col-sm-10"><input type="text" class="form-control" id="inputUsername" maxlength="15"/></div>
 				</div>
 				<div class="form-group">
 					<label class="col-sm-2 control-label">电话</label>
-					<div class="col-sm-10"><input type="number" class="form-control" name="tel"/></div>
+					<div class="col-sm-10"><input type="tel" class="form-control" id="inputTel" maxlength="11"/></div>
 				</div>
                 <div class="form-group">
 					<label class="col-sm-2 control-label">内容</label>
-					<div class="col-sm-10"><textarea class="form-control" rows="3" name="content"></textarea></div>
+					<div class="col-sm-10"><textarea class="form-control" rows="3" id="inputContent"></textarea></div>
 				</div>
 				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10"><button type="submit" class="btn btn-default">提交</button></div>
+					<div class="col-sm-offset-2 col-sm-10"><button type="button" id="doSubmit" class="btn btn-default">提交</button></div>
 				</div>
 </form>
 			</div>
 		</div>
 	</div>
 </div>
+<script>
+//form submit
+(function(){
+	var reg={
+		Username:/.{2,15}/,
+		Tel:/\d{11}/,
+		Content:/.{5,120}/
+	};
+	var msg={
+		Username: '您填写的姓名有误，请核查',
+		Tel: '您填写的电话有误，请核查',
+		Content: '留言内容请控制在5~120个字符之内'
+	};
+	
+	var btnSubmit=$('#doSubmit');
+	
+	btnSubmit.click(function(){
+		var valStr='';
+		var sendData={
+			Username:'',
+			Tel:'',
+			Content:''
+		};
+		for (var x in reg){
+			valStr=$.trim($('#input'+x).val());
+			if (reg[x].test(valStr)===false){
+				alert(msg[x]);
+				return;
+			}
+			sendData[x]=valStr;
+		}
+		$.ajax({
+			url: 'index.php?s=/Guestbook/secondVersionAdd',
+            dataType: 'json',
+            type: 'post',
+            data: {username:sendData.Username, tel:sendData.Tel, content:sendData.Content},
+            timeout: 10000,
+            beforeSend: function (){
+                btnSet(false);
+            },
+            error: function (XHR, status, errorThrown) {
+				btnSet(true);
+				alert(errorThrown);
+            },
+            //请求成功
+            success: function (data) {
+                btnSet(true);
+				if (data.status==1){
+					alert('留言成功！');
+					for (var x in reg){
+						$('#input'+x).val('');
+					}
+				}else{
+					alert(data.info);
+				}
+            }
+		});
+		
+		function btnSet(flag){
+			if (flag==false){
+				btnSubmit.attr('disabled','disabled').text('正在提交留言信息...');
+			}else{
+				btnSubmit.removeAttr("disabled").text('提交');
+			}
+		}
+	});
+})();
+</script>
