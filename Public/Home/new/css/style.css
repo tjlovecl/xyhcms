@@ -234,7 +234,7 @@ body{ font-family: 'Microsoft YaHei',sans-serif;}
 .lc_phone{ display:none;}
 /*联系我们*/
 .contact{ background:#070707 url(../images/service/contact_us_bg.png) no-repeat center top; color:#fff;}
-.contact .form-control{ background:rgba(155,155,155,0.26); border:1px solid rgba(190,190,190,0.26);}
+.contact .form-control{ background:rgba(155,155,155,0.26); border:1px solid rgba(190,190,190,0.26); color:#fff;}
 .contact .btn{ background:rgba(155,155,155,0.26); border:1px solid rgba(190,190,190,0.26); color:#fff;}
 .contact ul { padding-bottom:13.8%;}
 .contact ul div{ margin-bottom:5%;}
@@ -244,6 +244,7 @@ body{ font-family: 'Microsoft YaHei',sans-serif;}
 .contact .form-group lable{ float:left;}
 .contact .form-group .col-sm-10{ float:right; width:80%; padding-left:0;}
 .contact .form-group .col-sm-10 font{}
+.form-group button[disabled]:hover{ background-color:red; border-color:red;}
 
 
 /*大于768px尺寸*/
