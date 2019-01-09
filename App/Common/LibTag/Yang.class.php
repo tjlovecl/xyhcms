@@ -844,7 +844,7 @@ str;
 
 
 	//Load('extend');//调用msubstr()
-
+    \$listCount = count(\$_list);
 	foreach(\$_list as \$autoindex => \$list):
 
 	\$_jumpflag = (\$list['flag'] & B_JUMP) == B_JUMP? true : false;
