@@ -2,7 +2,7 @@
 //登录验证  1为空   2为错误
 
 $(function(){
-	
+	var body=$('body').eq(0);
 	if (!$.support.leadingWhitespace) {
         layer.alert('XYHCMS后台不再保障IE8及以下浏览器的正常访问。建议您尽快升级浏览器IE9+，或者使用Chrome、Firefox。', {icon: 2});
     }
@@ -60,23 +60,24 @@ $(function(){
 			btn.removeAttr('disabled');
 			$('#vcode').trigger('click');
 		});
-		
-
 	});
 
 
 
 	//验证用户名
-	$("input[name='username']").blur(function(){
+	username.focus(function(){
+		body.addClass('focus');
+	}).blur(function(){
 		if($.trim(username.val())==''){
 			layer.tips('用户名不能为空', "input[name='username']");
-			username.focus();
+			//username.focus();
 			return ;
 		}
-		
 	});
 	//验证密码
-	$("input[name='password']").blur(function(){
+	password.focus(function(){
+		body.addClass('focus');
+	}).blur(function(){
 		var username=$("input[name='username']");
 		if($.trim(password.val())==''){
 			layer.tips('密码不能为空', "input[name='password']");
@@ -86,8 +87,15 @@ $(function(){
 		
 	});
 
-	$("input[name='code']").focus(function(){
+	code.focus(function(){
+		body.addClass('focus');
     });
+	
+	body.click(function(e){
+		if (e.target===body[0]){
+			body.removeClass('focus');
+		}
+	});
 
 });
 

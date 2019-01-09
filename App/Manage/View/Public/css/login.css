@@ -1,7 +1,7 @@
-body{padding:0px;margin: 0px;font-size:14px;color:#333333; background:#30385b url(../images/login_bg_big.jpg) repeat center top;
-
-font-family: "Microsoft YaHei", "微软雅黑", "宋体", Arial, sans-serif;
-}
+html,body{ margin:0; height:100%;}
+body{padding:0px;margin: 0px;font-size:14px; color:#333333; font-family: "Microsoft YaHei", "微软雅黑", "宋体", Arial, sans-serif; background-color:#000; overflow:hidden;}
+body:before{ content:''; position:absolute; top:-20px; left:-20px; right:-20px; bottom:-20px; background:url(../images/login_bg_big3.jpg) no-repeat center center;  transition-property:opacity,filter,transform; transition-duration:1s;}
+body.focus:before{ opacity:.4; filter:blur(5px); transform:scale(1.1); transform-origin:50% 50%;}
 input{ border:solid 1px #dcdcdc;height:30px; line-height:30px; padding:3px 6px;color:#666; vertical-align: middle; font-size: 14px;}
 input{ border-radius: 5px; background: transparent;border:solid 1px #999999; }
 select{border:solid 1px #ccc;}
@@ -36,14 +36,16 @@ button:disabled {background-color: #eeeeee; color:#999999;}
 	width:500px; 
 	height:370px;
 	border:solid 0px #2393d5;
-	padding:0px;position: absolute;
-	left: 50%;top: 50%;overflow: hidden;display:block;
-	margin:-170px 0 0 -250px;
+	padding:0px; position:absolute;
+	left:0; right:0; top:0; bottom:0; overflow:hidden;
+	margin:auto;
 	border-radius: 10px;
+	box-shadow:0 0 15px rgba(0,0,0,.3);
 }
 .xyh-login .xyh-login-form{padding:20px;}
 /*.xyh-login .title{font-size:16px; height: 37px;}*/
-.xyh-login .title{font-size:16px; height: 50px; background:url(../images/login_title.png) no-repeat; margin-bottom: 20px;}
+.xyh-login .title{font-size:26px; height: 50px; margin-bottom: 20px; text-align:center;}
+.xyh-login .title img{ display:inline-block; height:100%; vertical-align:bottom; margin-right:20px;}
 
 
 

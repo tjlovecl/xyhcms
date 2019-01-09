@@ -1,35 +1,35 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>创狮管理后台</title>
-<link rel="stylesheet" href="__PUBLIC__/css/login.css?v20160625" />
-<script type="text/javascript" src="__DATA__/static/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="__DATA__/static/jq_plugins/layer/layer.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/login.js?v20160625000"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>创狮管理后台</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/login.css?v20160625" />
+	<script type="text/javascript" src="__DATA__/static/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="__DATA__/static/jq_plugins/layer/layer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/login.js?v20160625000"></script>
 </head>	
 <body>
 	<div class="xyh-login">
 		<div class="xyh-login-form">	
 			<form action="{:U('Login/login')}" method="post" id="LoginForm">
-			<div class="title">	</div>
+			<div class="title"><img src="__PUBLIC__/images/logo.png" alt="创狮"/>网站后台管理系统</div>
 			<table width="100%">
 				<tr>
 					<th>帐号:</th>
 					<td>
-						<input type="username" name="username" class="len220"/>
+						<input type="username" name="username" class="len220" maxlength="30"/>
 					</td>
 				</tr>
 				<tr>
 					<th>密码:</th>
 					<td>
-						<input type="password" class="len220" name="password"/>
+						<input type="password" class="len220" name="password" maxlength="32"/>
 					</td>
 				</tr>
 				<tr>
 					<th>验证码:</th>
 				  <td>
-						<input type="code" class="len220" name="code" autocomplete="off" /></td>
+						<input type="code" class="len220" name="code" autocomplete="off" maxlength="4" /></td>
 				</tr>
 				<tr>
 					<th>&nbsp;</th>
@@ -44,6 +44,5 @@
 		</form>
 		</div>
 	</div>
-
 </body>
 </html>
