@@ -11,7 +11,6 @@ namespace Home\Controller;
 
 class StaticController extends HomeCommonController
 {
-	
     // 关于创狮
     public function about() {
         $this->display();

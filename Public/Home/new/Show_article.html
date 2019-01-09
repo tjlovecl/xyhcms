@@ -19,13 +19,16 @@
 	<div class="row clearfix">
 		<div class="col-md-12 col-sm-12 col-xs-12 column ">
 			<ul class="list-inline">
-				<li class="case_active"><a href="#">事件营销</a></li>
+				<yang:catlist type="self" >
+					<li <if condition="$catlist.id eq $_typeid"> class="case_active" </if>> <a href="{$catlist.url}">{$catlist.name}</a></li>
+				</yang:catlist>
+				<!--<li class="case_active"><a href="#">事件营销</a></li>
                 <li><a href="#">搜索引擎</a></li>
                 <li><a href="#">互动营销</a></li>
                 <li><a href="#">创意设计</a></li>
                 <li><a href="#">线下活动</a></li>
                 <li><a href="#">网站建设</a></li>
-                <li><a href="#">舆情监控</a></li>        
+                <li><a href="#">舆情监控</a></li> -->
 			</ul>
 		</div>
 	</div>
@@ -33,17 +36,17 @@
 </div>
 
 <div class="container viewpoint_mian">
-	<div class=" fs26 text-color-4 text-center" >如何像AlphaGO 一样做营销？ —— 数据化营销自动化体系构建</div>
+	<div class=" fs26 text-color-4 text-center" >{$content.title}</div>
     <div class=" view_year text-center">
-		<span><i class="iconfont">&#xe66d;</i>2017-10-27</span><span><i class="iconfont">&#xe682;</i>赛诺贝斯，营销</span>
+		<span><i class="iconfont">&#xe66d;</i>{$content.publish_time|get_date='Y-m-d'}</span><span><i class="iconfont">&#xe682;</i>{$content.keywords}</span>
 	</div>
 	<!--放置内容区域-->
     <div class="viewpoint_con">
-	中国数据营销及CRM领域营销的领军人物，超过十年的行业从业经验，2009年创立赛诺贝斯公司旗下优奥公司，带领专业技术团队及产品部门研发多个行业领先的创新解决方案，为数字营销服务奠定了不可或缺的技术基础。为B2B\B2C领域的客户提供专业的数字化营销的创新应用及服务，坚持对企业创
-    新力及服务专业化的执着追求，使公司的发展始终保持行业领先。 
+		{$content.content}
     </div>
+	<!-- todo -->
     <div class="bdsharebuttonbox"><a href="#" class="bds_more">分享到：</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a><a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏">百度云收藏</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧">百度贴吧</a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网">豆瓣网</a><a href="#" class="bds_xinhua" data-cmd="xinhua" title="分享到新华微博">新华微博</a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网">开心网</a></div>
-	<p class="xyp">上一篇：<a href="#">百度上线智能搜索功能&nbsp;实时显示结果</a><br>下一篇：没有了</p>
+	<p class="xyp">上一篇：<yang:prev /><br>下一篇：<yang:next /></p>
 </div>
 
 <div class="footer bg-gray">
