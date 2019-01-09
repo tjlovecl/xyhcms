@@ -15,78 +15,27 @@
 
 <div class="container">
 	<div class="row clearfix casemt">
-    <div class="col-md-12 col-sm-12 col-xs-12 bg-blue case pd0">
-		<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_01.jpg"></div>
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='9' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}">查看详情 &gt;&gt;</a>
-			</yang:type>
+		<yang:catlist typeid='8' type='' limit='' flag='' modelid=''>
+		<if condition="$autoindex%2 eq 0">
+		<div class="col-md-12 col-sm-12 col-xs-12 bg-blue case pd0">
+			<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="{$catlist.cat_pic}"></div>
+			<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
+				<h3>{$catlist.name}</h3>
+				<p>{$catlist.description}</p>
+				<a href="{$catlist.url}">查看详情 &gt;&gt;</a>
+			</div>
 		</div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 case bg-red pd0">
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='10' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}">查看详情 &gt;&gt;</a>
-			</yang:type>
+		<else />
+		<div class="col-md-12 col-sm-12 col-xs-12 case pd0">
+			<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
+				<h3>{$catlist.name}</h3>
+				<p>{$catlist.description}</p>
+				<a href="{$catlist.url}">查看详情 &gt;&gt;</a>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="{$catlist.cat_pic}"></div>
 		</div>
-		<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_02.jpg"></div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 bg-orgin case pd0">
-		<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_03.jpg"></div>
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='11' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}" class="mouseRed">查看详情 &gt;&gt;</a>
-			</yang:type>
-		</div>
-    </div>
-	<div class="col-md-12 col-sm-12 col-xs-12 bg-blue case pd0">
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='12' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}" class="mouseRed">查看详情 &gt;&gt;</a>
-			</yang:type>
-		</div>
-        <div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_04.jpg"></div>
-    </div>
-    <div class="col-md-12 col-sm-12 col-xs-12 case bg-red pd0">
-    	<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_05.jpg"></div>
-    	<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='13' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}" class="mouseRed">查看详情 &gt;&gt;</a>
-			</yang:type>
-		</div>		
-    </div>
-    
-    <div class="col-md-12 col-sm-12 col-xs-12 bg-orgin case pd0">
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='14' level=''>
-			<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}" class="mouseRed">查看详情 &gt;&gt;</a>
-			</yang:type>
-		</div>
-        <div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_06.jpg"> </div>
-    </div>
-    
-    <div class="col-md-12 col-sm-12 col-xs-12 bg-blue case pd0">
-    	<div class="col-md-6 col-sm-6 col-xs-12 column pd0 case_pic"><img src="__PUBLIC__/images/case/case_07.jpg"> </div>
-		<div class="col-md-6 col-sm-6 col-xs-12 case_text column mouseRed">
-			<yang:type typeid='15' level=''>
-		  	<h3>{$type.name}</h3>
-			<p>事件营销（Event Marking）是企业通过策划、组织和利用具有新闻价值、社会影响以及名人效应的人物或事件，吸引媒体、社会团体和消费者的兴趣与关注</p>
-			<a href="{$type.url}" class="mouseRed">查看详情 &gt;&gt;</a>
-			</yang:type>
-		</div>
-    </div>
+		</if>
+		</yang:catlist>
 	</div>   
 </div>
 <div class="footer bg-gray">
@@ -94,5 +43,21 @@
 		<include file="Public:footer"/>
 	</div>
 </div>
+<script>
+//fit background-color
+(function(){
+	$('.casemt').children('div').each(function(i){
+		var per=i % 3;
+		switch(per){
+			case 0:
+				$(this).addClass('bg-blue'); break;
+			case 1:
+				$(this).addClass('bg-red'); break;
+			case 2:
+				$(this).addClass('bg-orgin'); break;
+		}
+	});
+})();
+</script>
 </body>
 </html>

@@ -21,7 +21,7 @@ class Page{
 
     private $p       = 'p'; //分页参数名
     private $url     = null; //当前链接URL
-    private $nowPage = 1;
+    public $nowPage = 1;
 
     //xyh
     public $actionName = '';//代替默认U方法中的ACTION_NAME
