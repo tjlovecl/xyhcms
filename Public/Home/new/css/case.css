@@ -95,6 +95,7 @@
 .viewpoint .media .media-body{ line-height:26px; padding-left:3%;}
 .viewpoint .media .media-body h4{ font-size:25px; color:#333; padding-bottom:5%; padding-top:1%;}
 .viewpoint .pager{ margin: 20px 0 50px;}
+.viewpoint .pager li{ margin:0 3px;}
 .viewpoint .pager .active a{ color:#fff; background:#d70f23; border: 1px solid #d70f23;}
 .viewpoint .pager li > a, .pager li > span{ padding: 6px 14px; border-radius:5px; font-size:16px;}
 

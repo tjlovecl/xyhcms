@@ -11,51 +11,48 @@ namespace Home\Controller;
 
 class StaticController extends HomeCommonController
 {
-
-    // 创狮服务总体介绍
+    // 关于创狮
     public function about() {
         $this->display();
     }
-
-    // 关于创狮
-    public function two() {
-        $this->display();
-    }
-
-    // 技术开发专区
-    public function three() {
-        $this->display();
-    }
-
-    // 精品案例封面
-    public function four() {
-        $this->display();
-    }
-
-    // 视频设计专区
-    public function five() {
-        $this->display();
-    }
-
-    // 问答营销
-    public function six() {
-        $this->display();
-    }
-
-    // 新闻营销
-    public function seven() {
-        $this->display();
-    }
-
-    // SEM
-    public function eight() {
-        $this->display();
-    }
-
-    // seo
-    public function nine() {
-        $this->display();
-    }
-
-
+	
+	//视觉设计
+	public function vdesign() {
+		$this->display();
+	}
+	
+	//问答营销
+	public function answer() {
+		$this->display();
+	}
+	
+	//新闻营销
+	public function news() {
+		$this->display();
+	}
+	
+	//seo营销
+	public function seo() {
+		$this->display();
+	}
+	
+	//SEM
+	public function sem() {
+		$this->display();
+	}
+	
+	//服务总体介绍
+	public function service() {
+		$this->display();
+	}
+	
+	//技术开发专区
+	public function technics() {
+		$this->display();
+	}
+	
+	//精品案例封面
+	public function cases() {
+		$this->display();
+	}
 }

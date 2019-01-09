@@ -829,6 +829,10 @@ str;
 			\$thisPage->setConfig('theme',"$pagetheme");
 			\$limit = \$thisPage->firstRow. ',' .\$thisPage->listRows;
 			\$page = \$thisPage->show();
+			\$raPage = array(
+			    'page' => \$thisPage->nowPage,
+				'total' => \$thisPage->totalPages,
+			);
 
 		}else {
 			\$limit = "$limit";
