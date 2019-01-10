@@ -31,7 +31,7 @@
 
 <div class="container viewpoint mt20">
     <div class="row clearfix">
-        <yang:list typeid="$cid" pagesize='1' pageroll='4'>
+        <yang:list typeid="$cid" pagesize='10' pageroll='4'>
             <div class="col-md-12 column wow bounceInDown ">
                 <div class="media">
                     <a href="{$list.url}" class="pull-left"><img
@@ -64,6 +64,7 @@
 	var total=parseInt(dom.attr('total'));
 	var prev=page-1<=0? 1 : page-1;
 	var path=location.href;
+	var hasPage=path.indexOf('/p/');
 	var next=page==total? page: page+1;
 	var htmlStr='<li><a href="'+ makeHref(prev) +'">&laquo;</a></li>';
 	for (var i=0; i<total; i++){
@@ -74,7 +75,11 @@
 	dom.children('li').eq(page).addClass('active disabled').children('a').attr('href','javascript:void(0)');
 	
 	function makeHref(index){
-		return path.replace(/p\/\d+\.html/,'p\/'+index+'.html');
+		if (hasPage>=0){
+			return path.replace(/p\/\d+\.html/,'p\/'+index+'.html');
+		}else{
+			return path.replace(/(\d+)\.html/,'$1\/p\/'+index+'.html');
+		}
 	}
 })();
 </script>
