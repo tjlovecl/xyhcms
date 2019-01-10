@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteBase /
-RewriteCond %{http_host} ^test.relaxset.com$ [NC]
-RewriteRule ^(.*)/(.*)$ $1/creassiah/$2
